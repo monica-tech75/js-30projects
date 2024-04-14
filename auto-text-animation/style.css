@@ -1,0 +1,14 @@
+@font-face {
+  font-family: "FiraCode-Bold";
+  src: url("./fonts/FiraCode-Bold.woff2");
+}
+
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+  background-color: salmon;
+  font-family: "FiraCode-Bold";
+}
