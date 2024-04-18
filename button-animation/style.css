@@ -1,0 +1,46 @@
+body {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+  background-color: aqua;
+  font-family: Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 2rem;
+}
+
+.btn {
+  background-color: rgb(179, 41, 151);
+  color: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 4px 5px 0 #000000c2;
+  position: relative;
+  text-decoration: none;
+  overflow: hidden;
+}
+
+.btn span {
+  position: relative;
+  z-index: 1;
+}
+
+.btn::before {
+  content: "";
+  position: absolute;
+  background-color: orange;
+  width: 0;
+  height: 0;
+  left: var(--xPos);
+  top: var(--yPos);
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  transition: width 1.5s, height 1.5s;
+}
+
+.btn:hover::before {
+  width: 250px;
+  height: 250px;
+}
+
